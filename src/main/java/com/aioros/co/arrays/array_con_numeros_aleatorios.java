@@ -30,14 +30,14 @@ public class array_con_numeros_aleatorios {
         
     }
     
-    private static int num_random(){
+    private static int num_random(int limite){
         Random r = new Random();
-        return r.nextInt(10);
+        return r.nextInt(limite);
     }
     
     public static void llenar_matriz(int matriz[]){
         for(int i=0;i<matriz.length;i++){
-            matriz[i]=num_random();
+            matriz[i]=num_random(10);
         }
     }
     
